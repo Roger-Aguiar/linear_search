@@ -31,12 +31,13 @@ class LinearSearch
 
     display_array = (integer_array) =>
     {        
-        for(let current_number = 0; current_number < this.quantity_of_numbers; current_number++)
+        for(let current_number = 0; current_number < integer_array.length; current_number++)
         {
-            document.write(integer_array[current_number]);
+            document.getElementById("integer_array").innerHTML += String(integer_array[current_number]); 
+            
             if(current_number < this.quantity_of_numbers - 1)
             {
-                document.write(" - ");
+                document.getElementById("integer_array").innerHTML += " - ";                
             }
         }
     }
