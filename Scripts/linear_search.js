@@ -33,11 +33,11 @@ class LinearSearch
     {        
         for(let current_number = 0; current_number < integer_array.length; current_number++)
         {
-            document.getElementById("integer_array").innerHTML += String(integer_array[current_number]); 
+            document.write(integer_array[current_number]);            
             
             if(current_number < this.quantity_of_numbers - 1)
             {
-                document.getElementById("integer_array").innerHTML += " - ";                
+                document.write(" - ");                
             }
         }
     }
